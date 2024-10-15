@@ -38,22 +38,18 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a Computer Science Undergrad student at Indian Institute of
-            Information Technology and Management, Gwalior.
+          I’m a Computer Science Master’s student at the University of Utah, with experience in full-stack development. 
+         <p>
+     
+          I’ve worked with technologies like React, Angular, .NET, and Spring Boot, contributing to large-scale apps and improving database performance. 
+
           </p>
           <p>
-            I'm a very ambitious Full stack developer. I love Automating tasks.
-            Also experienced with Natural Language Processing, Computer Vision.
+
+          I enjoy solving real-world problems through coding and specialize in backend services and dynamic frontend development. Passionate about exploring new tools, I’m always seeking ways to stay ahead in software engineering.  </p>
+     
           </p>
-          <p>
-            I'm also a competitive coder. Python is my favorite language but
-            when it comes to competitive coding, I prefer to use C++.
-          </p>
-          <p>In love with Open Source.</p>
-          <p>
-            If I need to define myself in one sentence that would be an Anime
-            Lover, and tech-obsessed!!!
-          </p>
+   
         </div>
 
         <div className="stage-cube-cont">
