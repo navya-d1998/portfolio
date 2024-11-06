@@ -73,11 +73,16 @@
 
       &:first-child {
         &:after {
-          content: 'HOME';
+          //content: 'HOME';
         }
       }
     }
 
+    a.home-link {
+      &:after {
+        content: 'HOME';
+      }
+    }
     a.about-link {
       &:after {
         content: 'ABOUT';
@@ -93,6 +98,11 @@
     a.skills-link {
       &:after {
         content: 'SKILLS';
+      }
+    }
+    a.experience-link {
+      &:after {
+        content: 'EXPERIENCE';
       }
     }
 
