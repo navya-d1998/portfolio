@@ -83,7 +83,7 @@
 .map-wrap {
   background: rgba(8, 253, 216, 0.1);
   float: right;
-  width: 53%;
+  width: 50%;
   height: 115%;
   margin-top: -3%;
 }
@@ -101,7 +101,8 @@
   position: absolute;
   background: #000;
   top: 50px;
-  right: 30%;
+  left: 50%;
+  //right: 30%;
   z-index: 1;
   width: 267px;
   padding: 20px;

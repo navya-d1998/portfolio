@@ -48,9 +48,11 @@
 .container.skills-page {
   .text-zone {
     position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
+    //left: 10%;
+    //top: 40%;
+   // transform: translateY(-50%);
+   padding-left: 17rem;
+   padding-top: 17rem;
     width: 35%;
     vertical-align: middle;
     display: table-cell;
@@ -94,7 +96,7 @@
 
     p {
       font-size: 17px;
-      color: #fff;
+      color: black;
       font-family: sans-serif;
       font-weight: 300;
       max-width: fit-content;

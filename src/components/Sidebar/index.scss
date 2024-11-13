@@ -1,6 +1,15 @@
 .nav-bar {
+
+
+  min-width: 75px; /* Minimum width */
+  max-width: 300px; /* Maximum width */
+  word-wrap: break-word; /* Ensure long words are wrapped */
+  overflow-wrap: break-word; /* Ensure long words are wrapped */
+
+
+
   background: #181818;
-  width: 60px;
+  //width: 75px;
   height: 100%;
   position: absolute;
   top: 0;

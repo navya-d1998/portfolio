@@ -27,7 +27,7 @@ const About = () => {
   }, [])
 
   return (
-    <>
+    <>ll
       <div className="container about-page">
         <div className="text-zone">
           <h1>
@@ -37,18 +37,29 @@ const About = () => {
               idx={15}
             />
           </h1>
+          {/* I’m Navya Dommalapati, a Full Stack Software Engineer skilled in C#, Python, SQL, and frameworks like .NET Core and React. My experience spans developing scalable applications, optimizing workflows, and working with cloud technologies to deliver high-impact solutions.
+
+I’m passionate about tackling complex problems with innovative, scalable approaches. With expertise in cloud technologies and experience in machine learning for vulnerability detection, I’m driven to create impactful applications and continuously learn new skills. Thanks for stopping by feel free to reach out to connect!
+  
+ 
           <p>
           I’m a Computer Science Master’s student at the University of Utah, with experience in full-stack development. 
+          </p> */}
          <p>
+         I'm a Master’s student in Computer Science at the University of Utah with hands-on experience in full-stack development. I’ve worked with React, Angular, .NET, and Spring Boot, building out everything from powerful backend systems to user-friendly frontends. I’m always looking to make things run better and smoother, whether that’s in large-scale apps or boosting database performance.
+          </p>
+          <p>
+          For me, coding is about solving real problems in creative ways. I love diving into new tools and approaches to keep things fresh and push my skills further. If you’re interested in tech that makes a difference, let’s connect—I’m always up for a good conversation about building something great.
+          </p>
      
-          I’ve worked with technologies like React, Angular, .NET, and Spring Boot, contributing to large-scale apps and improving database performance. 
+          {/* I’ve worked with technologies like React, Angular, .NET, and Spring Boot, contributing to large-scale apps and improving database performance. 
 
           </p>
           <p>
 
-          I enjoy solving real-world problems through coding and specialize in backend services and dynamic frontend development. Passionate about exploring new tools, I’m always seeking ways to stay ahead in software engineering.  </p>
+          I enjoy solving real-world problems through coding and specialize in backend services and dynamic frontend development. Passionate about exploring new tools, I’m always seeking ways to stay ahead in software engineering. 
      
-          </p>
+          </p> */}
    
         </div>
 
