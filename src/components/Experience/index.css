@@ -1,48 +1,111 @@
 .experience-page {
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
   overflow-y: auto; /* Make the page scrollable */
-
-  .text-zone {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-
-    h1 {
-      color: #1d1212;
-      font-size: 56px;
-      line-height: 63px;
-      margin: 0;
-      font-family: 'Coolvetica';
-      font-weight: 400;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+  margin-top: -2%;
+  .heading{
+    font-size: 40px;
   }
 
-  .MuiTimelineItem-root {
-    margin: 20px 0;
-  }
+}
 
-  .MuiTypography-root {
-    font-size: 18px;
-  }
+.text-zone {
+  width: 100%;
+  max-width: 1000px; /* Increase the max-width to make the boxes larger */
+  margin: 0 auto;
+  margin-bottom: 15%;
+  margin-top: -1%;
 
-  .MuiTimelineDot-root {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .MuiTimelineDot-root img {
-    width: 24px;
-    height: 24px;
+  h1 {
+    color: #1d1212;
+    font-size: 56px;
+    line-height: 63px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
-.details{
-  font-size: medium;
+
+.MuiTimelineItem-root {
+  margin: 40px 0; /* Increase margin to make the boxes larger */
 }
+
+.MuiTypography-root {
+  font-size: 18px;
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-align: left;
+}
+
+.details {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.details ul {
+  padding-left: 20px;
+}
+
+.details li {
+  font-size: small;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+
+.MuiTimelineDot-root {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiTimelineDot-root img {
+  width: 24px;
+  height: 24px;
+}
+
+.MuiTimelineConnector-root {
+  background-color: #bdbdbd; /* Ensure the connector lines are visible */
+}
+
+.MuiTimelineItem-positionLeft .MuiTimelineContent-root,
+.MuiTimelineItem-positionRight .MuiTimelineContent-root {
+  text-align: left;
+}
+
+/* .MuiTimelineItem-positionLeft .MuiTimelineOppositeContent-root,
+.MuiTimelineItem-positionRight .MuiTimelineOppositeContent-root {
+  text-align:center
+} */
+.titile{
+  font-weight: 100;
+  font-size: large;
+  text-align: left;
+}
+.MuiTimelineItem-root
+{
+  margin: 0 0;
+}
+ .MuiTimelineContent-root{
+  text-align: left;
+ }
+ .root{
+  font-size: 18px;
+ }
+ .heading{
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: left;
+ }
