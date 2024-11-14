@@ -49,7 +49,7 @@ I’m passionate about tackling complex problems with innovative, scalable appro
          I'm a Master’s student in Computer Science at the University of Utah with hands-on experience in full-stack development. I’ve worked with React, Angular, .NET, and Spring Boot, building out everything from powerful backend systems to user-friendly frontends. I’m always looking to make things run better and smoother, whether that’s in large-scale apps or boosting database performance.
           </p>
           <p>
-          For me, coding is about solving real problems in creative ways. I love diving into new tools and approaches to keep things fresh and push my skills further. If you’re interested in tech that makes a difference, let’s connect—I’m always up for a good conversation about building something great.
+          For me, coding is about solving real problems in creative ways. I love diving into new tools and approaches to keep things fresh and push my skills further. If you’re interested in tech that makes a difference, let’s connect I’m always up for a good conversation about building something great.
           </p>
      
           {/* I’ve worked with technologies like React, Angular, .NET, and Spring Boot, contributing to large-scale apps and improving database performance. 

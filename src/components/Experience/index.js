@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { useState } from 'react';
+
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -9,11 +11,18 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import './index.css';
+import Loader from 'react-loaders'
+
+import AnimatedLetters from '../AnimatedLetters'
+
 
 // Import custom icons
 import RadianIcon from '../../assets/images/radian-logo.svg';
 import UtahIcon from '../../assets/images/utah.png';
 import PsiogIcon from '../../assets/images/psiog.png';
+
+const aboutArray = 'Experience'.split('')
+
 
 const experiences = [
   {
@@ -21,14 +30,10 @@ const experiences = [
     company: 'Homegenius, a Radian company',
     date: 'May 2024 - Present',
     details: [
-      'Built .NET APIs and React/Next.js UI for location-based property searches and real-time valuations',
-      'Optimized data handling by converting LINQ queries to stored procedures for better performance',
-      'Upgraded real estate software from .NET MVC to .NET Core and React, boosting performance'
-      //'Developed .NET APIs and React/Next.js UI for location-based property searches, optimized data processing by converting LINQ queries to stored procedures, and migrated real estate software from NET MVC to .NET Core and React, significantly boosting performance.'
-     // 'Built .NET APIs and React/Next.js UI for location-based property searches and real-time valuations',
-      // 'Optimized data handling by converting LINQ queries to stored procedures for better performance',
-      // 'Upgraded real estate software from .NET MVC to .NET Core and React, boosting performance'
-  ],
+      'Developed .NET RESTful APIs and React/Next.js UI components.',
+      'Optimized data processing by migrating 40+ LINQ queries to stored procedures handling 10M+ housing listings.',
+      'Migrated homegenius Real Estate software from .NET MVC to .NET Core and React, boosting application performance by 35%.'
+    ],
     icon: RadianIcon,
     iconStyle: { width: '43px' },
   },
@@ -37,42 +42,46 @@ const experiences = [
     company: 'University of Utah Information Technology',
     date: 'Jan 2024 - May 2024',
     details: [
-      'Built high-performance RESTful APIs with Spring Boot for a student payment reminder system, adding secure authorization with Spring Security',
-      'Developed the Repay app frontend in Angular, implementing SSO, role-based access, and async data handling with RxJS'
-    //   'Architected RESTful APIs using Spring Boot 3 for a student payment reminder system.',
-    //   'Implemented Spring Security for robust authorization, enhancing application security.',
-    //   'Built the frontend of the Repay application using Angular 17, integrating Single Sign-On login authentication with role-based route authorization and asynchronous data handling with RxJS.'
-     ],
+      'Architected RESTful APIs with Spring Boot 3 for a student payment reminder system, implementing Spring Security for robust authorization and enhanced security.',
+      'Built the frontend of the Repay application using Angular 17, integrating Single Sign-On login authentication with role-based route authorization and asynchronous data handling with RxJS.'
+    ],
     icon: UtahIcon,
-    iconStyle: { width: '35px', height: '30px' },
+    iconStyle: { width: '38px', height: '30px' },
   },
   {
     title: 'Software Engineer',
     company: 'Psoig Digital Pvt.Ltd',
     date: 'Nov 2020 - May 2023',
     details: [
-      'Designed a Field Data Capturing App with .NET and Angular, supporting pipeline integrity operations via microservices',
-      'Built a .NET Windows Service to scale payroll processing and automated deployment using Azure CI/CD',
-      'Enhanced DOCX generation for payslips with Open XML, using templates and async methods for high-volume efficiency',
-      'Integrated an ML.NET recommendation engine with Matrix Factorization for equipment suggestions',
-      'Optimized RESTful APIs, SQL, and responsive UIs in React to improve client response times'
-          //   'Designed and Developed a Field Data Capturing App using .NET framework and Angular.',
-    //   'Developed a Field Data Capturing App with .NET and Angular, streamlining job data collection for 10,000+ users.',
-    //   'Enhanced payroll processing capacity by building a .NET Windows Service and automating deployments with Azure CI/CD.',
-    //   'Optimized document generation for high-volume payslips with Open XML, reducing processing time significantly.',
-    //   'Implemented an ML.NET recommendation engine to suggest equipment based on past usage patterns.',
-    //   'Achieved 60% faster response times by designing RESTful APIs in .NET Core, optimizing SQL queries, and creating responsive UIs in React.'
-     ],
+      'Designed and Developed a Field Data Capturing App using .NET framework and Angular.',
+      'Developed a Field Data Capturing App with .NET and Angular, streamlining job data collection for 10,000+ users.',
+      'Enhanced payroll processing capacity by building a .NET Windows Service and automating deployments with Azure CI/CD.',
+      'Optimized document generation for high-volume payslips with Open XML, reducing processing time significantly.',
+      'Implemented an ML.NET recommendation engine to suggest equipment based on past usage patterns.',
+      'Achieved 60% faster response times by designing RESTful APIs in .NET Core, optimizing SQL queries, and creating responsive UIs in React.'
+    ],
     icon: PsiogIcon,
-    iconStyle: { width: '45px', height: '30px' },
+    iconStyle: { width: '45px', height: '34px' },
   },
 ];
-
 export default function Experience() {
+  const [letterClass, setLetterClass] = useState('text-animate')
+
   return (
+    <>
     <div className="container experience-page">
       <div className="text-zone">
-        <h1 className='heading'>Experience</h1>
+        <h1>
+        <AnimatedLetters
+              letterClass={letterClass}
+              strArray={aboutArray}
+              idx={15}
+            />
+          </h1>
+
+
+
+
         <Timeline position="alternate">
           {experiences.map((exp, index) => (
             <TimelineItem key={index}>
@@ -115,5 +124,7 @@ export default function Experience() {
         </Timeline>
       </div>
     </div>
+    <Loader type="pacman" />
+    </>
   );
 }
