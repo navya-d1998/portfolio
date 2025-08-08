@@ -5,7 +5,7 @@ import {
   faHome,
   faUser,
   faEnvelope,
-  faScrewdriverWrench, faBriefcase
+  faScrewdriverWrench, faBriefcase, faFileCsv
 } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 
@@ -63,6 +63,15 @@ const Sidebar = () => {
               rel="noreferrer"
             >
               <FontAwesomeIcon icon={faGithub} color="#b9b9b9" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1pvhirLRTpRAPl2NXvzZipTbt1dZ2N0FM/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faFileCsv} color="#b9b9b9" />
             </a>
           </li>
         </ul>
